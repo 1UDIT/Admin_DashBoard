@@ -1,8 +1,6 @@
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
+    Card, 
+    CardDescription, 
     CardTitle,
 } from "./ui/card"
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import DarkModeSwitcher from './darkModeSwitcher'
 
 export default function Navbar() {

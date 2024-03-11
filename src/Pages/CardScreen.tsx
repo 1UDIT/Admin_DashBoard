@@ -3,10 +3,11 @@ import {
     CardContent,
     CardDescription,
     CardTitle,
-} from "./ui/card"
+} from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import CircularProgressBar from './CircularProgressBar'
-import SystemInfo from "./SystemInfo"
+import CircularProgressBar from '@/components/CircularProgressBar'
+import SystemInfo from "@/components/SystemInfo"
+import DefaultLayout from "@/components/layout/defaultLayout"
 
 
 
@@ -130,7 +131,7 @@ const defaultHTML = (defaultValue: string) => {
 
 export default function CardScreen() {
     return (
-        <>
+        <DefaultLayout>
             {/* <CardHeader> */}
             <div className="grid grid-cols-1   gap-4 h-full md:grid-cols-2">
                 <div className="col-span-1 p-4">
@@ -167,7 +168,6 @@ export default function CardScreen() {
                     })
                 }
             </div>
-
-        </ >
+        </DefaultLayout>
     )
 }
