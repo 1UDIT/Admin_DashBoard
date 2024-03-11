@@ -12,7 +12,7 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children })=> {
                 <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
                     <Navbar />
                     <main>
-                        <div className="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
+                        <div className="max-w-screen-2xl p-4 md:p-6 2xl:p-10">
                             {children}
                         </div>
                     </main>

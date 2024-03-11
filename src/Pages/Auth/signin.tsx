@@ -11,8 +11,8 @@ const SignIn: React.FC = () => {
   }
   return (
     <DefaultLayout>
-      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark xl:w-1/2 xl:border-l-2">
-        <div className="flex flex-wrap items-center m-auto"> 
+      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark xl:w-1/2 xl:border-l-2 m-auto">
+        <div className="flex flex-wrap items-center "> 
           <div className="w-full border-stroke dark:border-strokedark">
             <div className="w-full p-4 sm:p-12.5 xl:p-17.5">
               <span className="mb-1.5 block font-medium">Start for free</span>

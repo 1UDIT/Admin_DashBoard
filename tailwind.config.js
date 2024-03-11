@@ -242,6 +242,7 @@ module.exports = {
       },
       backgroundImage: {
         video: "url('../images/video/video.png')",
+        anime: "url('@/anime.gif')",
       },
       content: {
         'icon-copy': 'url("../images/icon/icon-copy-alt.svg")',
