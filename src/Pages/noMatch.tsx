@@ -21,7 +21,7 @@ export default function NoMatch() {
                                 </div>
                                 <div className="text-center text-xl">
                                     <h3 className="font-bold">Something Went Wrong..!</h3>
-                                    <p>The page Not Available!</p>
+                                    <p>The page Not Available!{location.pathname}</p>
                                     <Link to={"/"} className="bg-blue-700 p-2 text-white inline-block mt-10">
                                         Go to Home
                                     </Link>
