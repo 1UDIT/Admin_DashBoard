@@ -11,7 +11,7 @@ import {
     TableHead,
     TableHeader,
     TableRow,
-} from "@/components/ui/table";
+} from "@/components/ui/table"; 
 import { Progress } from "@/components/ui/progress"
 import { FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 import { GrInProgress } from "react-icons/gr";
@@ -175,39 +175,39 @@ export default function Tabledata() {
 
     return (
         <DefaultLayout>
-            <div className="p-2">
-                <Table className='text-black dark:text-white '>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead className="text-center">Id</TableHead>
-                            <TableHead className="w-[100px]">Invoice</TableHead>
-                            <TableHead>Status</TableHead>
-                            <TableHead>Date</TableHead>
-                            <TableHead>Method</TableHead>
-                            <TableHead className="text-right">Amount</TableHead>
-                            <TableHead className="text-right">Src/Des</TableHead>
-                            <TableHead className="text-right">status</TableHead>
-                            <TableHead className="text-right">Progress</TableHead>
+        <div className="p-2"> 
+            <Table>
+                <TableHeader>
+                    <TableRow>
+                        <TableHead className="text-center">Id</TableHead>
+                        <TableHead className="w-[100px]">Invoice</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead>Date</TableHead>
+                        <TableHead>Method</TableHead>
+                        <TableHead className="text-right">Amount</TableHead>
+                        <TableHead className="text-right">Src/Des</TableHead>
+                        <TableHead className="text-right">status</TableHead>
+                        <TableHead className="text-right">Progress</TableHead>
+                    </TableRow>
+                </TableHeader>
+                <TableBody>
+                    {data.map((invoice) => (
+                        <TableRow key={invoice.index} className='text-black dark:text-white dark:odd:bg-[#24303f] dark:even:bg-[#2d3d52] odd:bg-white even:bg-slate-50'>
+                            <TableCell className="text-center">{invoice.index}</TableCell>
+                            <TableCell  >{invoice.firstName}</TableCell>
+                            <TableCell>{invoice.lastName}</TableCell>
+                            <TableCell>{invoice.date}</TableCell>
+                            <TableCell>{invoice.age}</TableCell>
+                            <TableCell className="text-right">{invoice.visits}</TableCell>
+                            <TableCell className="text-right">{invoice.srcdes}</TableCell>
+                            <TableCell className="text-right">{statusCall(invoice.status)}</TableCell>
+                            <TableCell className="flex flex-row-reverse ">
+                                <Progress value={invoice.progress} className="w-[90%] flex justify-center " /></TableCell>
                         </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {data.map((invoice) => (
-                            <TableRow key={invoice.index}  >
-                                <TableCell className="text-center">{invoice.index}</TableCell>
-                                <TableCell  >{invoice.firstName}</TableCell>
-                                <TableCell>{invoice.lastName}</TableCell>
-                                <TableCell>{invoice.date}</TableCell>
-                                <TableCell>{invoice.age}</TableCell>
-                                <TableCell className="text-right">{invoice.visits}</TableCell>
-                                <TableCell className="text-right">{invoice.srcdes}</TableCell>
-                                <TableCell className="text-right">{statusCall(invoice.status)}</TableCell>
-                                <TableCell className="flex flex-row-reverse ">
-                                    <Progress value={invoice.progress} className="w-[90%] flex justify-center " /></TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </div>
+                    ))}
+                </TableBody>
+            </Table>
+        </div>
         </DefaultLayout>
     )
 }
