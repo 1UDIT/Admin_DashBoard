@@ -75,3 +75,12 @@
     @apply font-normal text-base text-body bg-whiten relative z-1;
   }
 } 
+:root {
+  --textColor: rgb(2, 6, 23);
+  --bgColor: rgb(240, 240, 240);
+}
+
+.theme-dark {
+  --textColor: rgb(206, 207, 212);
+  --bgColor: rgb(2, 6, 23);
+}
