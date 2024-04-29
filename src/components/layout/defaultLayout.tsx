@@ -6,18 +6,27 @@ const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children })=> {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     return (
-        <div className="dark:bg-boxdark-2 dark:text-bodydark">
-            <div className="flex h-screen overflow-hidden">
+        <div className="dark:bg-boxdark-2 dark:text-bodydark ">
+            <div className="flex  overflow-x-hidden">
                 <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-                <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
+                <div className="relative flex-1 flex-col  w-full">
                     <Navbar />
                     <main>
-                        <div className="max-w-screen-2xl p-4 md:p-6 2xl:p-10">
-                            {children}
-                        </div>
+                        {children}
                     </main>
                 </div>
             </div>
+             {/* <div className="flex  overflow-x-hidden">
+                <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+                <div className="relative flex flex-col   w-full">
+                    <div className="relative flex-1 flex-col   w-full">
+                        <Navbar />
+                    </div>
+                    <div className="relative flex-1 flex-col  w-full">
+                        {children}
+                    </div>
+                </div>
+            </div> */}
         </div>
     )
 }

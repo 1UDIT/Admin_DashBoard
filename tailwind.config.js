@@ -268,7 +268,7 @@ module.exports = {
         8: '1px 0 0 #313D4A, -1px 0 0 #313D4A, 0 1px 0 #313D4A, 0 -1px 0 #313D4A, 0 3px 13px rgb(0 0 0 / 8%)',
       },
       dropShadow: {
-        1: '0px 1px 0px #E2E8F0',
+        1: '0px 1px 2px #E2E8F0',
         2: '0px 1px 4px rgba(0, 0, 0, 0.12)',
       },
       borderRadius: {

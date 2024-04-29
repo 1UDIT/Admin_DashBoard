@@ -1,10 +1,10 @@
 import CardScreen from '@/Pages/CardScreen'
 import SignIn from '@/Pages/Auth/signin';
-import { Route, Routes } from 'react-router-dom';
-import Tabledata from '@/Pages/TableData/table';
+import { Route, Routes } from 'react-router-dom'; 
 import NoMatch from '@/Pages/noMatch';
 import Loader from '@/Loader';
 import { useEffect, useState } from 'react';
+import TableData from './Pages/TableData/page';
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
             index
             element={
               <>
-                <Tabledata />
+                <TableData />
               </>
             }
           />
